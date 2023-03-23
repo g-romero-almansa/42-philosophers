@@ -6,7 +6,7 @@
 /*   By: gromero- <gromero-@student.42malaga.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/17 13:21:46 by gromero-          #+#    #+#             */
-/*   Updated: 2023/03/22 10:39:58 by gromero-         ###   ########.fr       */
+/*   Updated: 2023/03/23 13:08:09 by gromero-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,23 +43,27 @@ int			ft_exit(int num);
 
 void		ft_init(int argc, char **argv, t_data *data);
 
+void		ft_init_pthreads(t_data *data);
+
 void		*ft_philo(void *data);
 
-void		ft_pick_fork(t_data *data, int id, int i);
+void		ft_pick_fork(t_data *cpy, int id, int i);
 
-void		ft_release_fork(t_data *data, int i, int j);
+void		ft_release_fork(t_data *cpy, int i, int j);
 
 void		ft_eatimes(t_data *data, int id);
 
 long long	ft_calculate_time(void);
 
-void		ft_sleep(int time);
+void		ft_eat(t_data *cpy, long l_eat, int id);
 
-void		ft_sleep2(t_data *cpy, long l_eat, int id);
+void		ft_sleep(t_data *cpy, long l_eat, int id);
 
 long long	ft_timediff(long long t1, long long t2);
 
 void		ft_checkdeath(long long l_eat, int t_die, t_data *cpy, int id);
+
+void		ft_onephilo(t_data *cpy, long l_eat, int id);
 
 int			ft_atoi(char *s);
 

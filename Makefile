@@ -6,11 +6,11 @@
 #    By: gromero- <gromero-@student.42malaga.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/17 13:19:52 by gromero-          #+#    #+#              #
-#    Updated: 2023/01/25 10:58:05 by gromero-         ###   ########.fr        #
+#    Updated: 2023/03/23 12:42:56 by gromero-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRC			=	source/philo.c source/ft_handle_error.c source/ft_utils.c \
+SRC			=	source/philo.c source/ft_handle_error.c source/ft_actions.c \
 				source/ft_time.c
 
 OBJ_SRC		=	 $(SRC:.c = .o)
